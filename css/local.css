@@ -219,6 +219,21 @@ body {
 }
 
 
+@media (min-width: 768px){
+  .navbar {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .landing-content {
+    margin-top: 500px!important;
+  }
+
+  .landing-rocket {
+    padding-top: 10px!important;
+  }
+}
+
 
 .scrolled {
   margin: 0;
@@ -234,9 +249,9 @@ body {
 
 .nav-item {
   font-family: 'Fugaz One', cursive;
-  font-size: 20px;
-  margin-left: 2rem!important;
-  margin-right: 2rem!important;
+  font-size: 18px;
+  margin-left: 1rem!important;
+  margin-right: 1rem!important;
 }
 
 .nav-item:hover {
