@@ -218,11 +218,15 @@ body {
   padding: 10px;
   border-bottom: 2px solid #fff; 
   transition: all 500ms ease;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-top: 10px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
-
+.nav-de-pad {
+  padding: 0!important;
+  margin: 0;
+}
 
 .scrolled {
   margin: 0;
@@ -237,10 +241,12 @@ body {
 }
 
 .nav-item {
+  padding: 20px;
   font-family: 'Baloo Bhaijaan', cursive;
   font-size: 18px;
   margin-left: 1rem!important;
   margin-right: 1rem!important;
+  transition: all 500ms ease;
 }
 
 .nav-item:hover {
@@ -277,7 +283,7 @@ body {
   justify-content: center;
   height: 100%;
 
-  margin-top: 500px;
+  margin-top: 600px;
 
   position: relative;
   z-index: 50;
@@ -381,23 +387,28 @@ body {
 }
 
 .wrapper {
-  padding: 200px 100px 0px 100px;
+  padding: 100px 100px 0px 100px;
 }
 
 .header {
+  background-color: #122c57;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.intro-header {
+  font-size: 60px;
+  text-shadow: 3px 4px #444;
   color: #fff;
   font-family: 'Baloo Bhaijaan', cursive;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  text-shadow: 3px 4px #444;
-  background-color: #122c57;
-  width: 100%;
 }
 
-.header h1 {
-  font-size: 60px;
-  white-space: nowrap;
+.intro-supp {
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .icon-center {
@@ -526,9 +537,8 @@ body {
 
 .astronaught {
   position: absolute;
-  top: 10;
+  bottom: 90px;
   right: 0;
-  left: 10;
   padding-right: 120px;
   width: 256px;
   height: 256px; 
@@ -677,6 +687,7 @@ body {
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
 
+ 
   .carousel-header {
     padding: 10px;
   }
@@ -691,16 +702,24 @@ body {
     width: 128px!important;
     height: 128px!important;
   }
+
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  
   .navbar {
     background-color: #38761f;
     border-bottom: 10px solid #1d420e;
     margin: 0;
   }
+
+  .landing-content {
+    margin-top: 600px!important;
+  }
+
 }
+  
 
 
 

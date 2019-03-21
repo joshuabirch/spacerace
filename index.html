@@ -93,7 +93,8 @@
 
             <div class="row align-items-center justify-content-center">
                     <div id="about-link" class="col header">
-                            <h1>What You Want to Know...</h1>
+                            <h1 class="intro-header">What You Want to Know...</h1>
+                            <p class="intro-supp">Something Interesting here</p>
                     </div>
                 </div>
         <div class="wrapper">
@@ -254,6 +255,7 @@
     <script>
         $(window).scroll(function() {
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+            $('.nav-item').toggleClass('nav-de-pad', $(this).scrollTop() > 50);
         });
 
         $(window).scroll(function() {
