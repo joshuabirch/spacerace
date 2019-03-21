@@ -1,5 +1,9 @@
-html {
-  overflow-x: hidden;
+html, body {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 body {
@@ -214,25 +218,10 @@ body {
   padding: 10px;
   border-bottom: 2px solid #fff; 
   transition: all 500ms ease;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
-
-@media (min-width: 768px){
-  .navbar {
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-
-  .landing-content {
-    margin-top: 500px!important;
-  }
-
-  .landing-rocket {
-    padding-top: 10px!important;
-  }
-}
 
 
 .scrolled {
@@ -248,7 +237,7 @@ body {
 }
 
 .nav-item {
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Baloo Bhaijaan', cursive;
   font-size: 18px;
   margin-left: 1rem!important;
   margin-right: 1rem!important;
@@ -256,6 +245,7 @@ body {
 
 .nav-item:hover {
   border: 2px solid #fff;
+  border-radius: 20px;
   background-color: #38761f;
   color: #fff;
   transition: all 100ms ease-in-out;
@@ -270,6 +260,7 @@ body {
 
 .active {
   border: 2px solid #fff;
+  border-radius: 20px;
 }
 
 .landing {
@@ -286,7 +277,7 @@ body {
   justify-content: center;
   height: 100%;
 
-  margin-top: 600px;
+  margin-top: 500px;
 
   position: relative;
   z-index: 50;
@@ -295,7 +286,7 @@ body {
 #landing-title {
   font-size: 56px;
   color: #fff;
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Baloo Bhaijaan', cursive;
   text-shadow: 3px 4px #444;
 }
 
@@ -308,7 +299,7 @@ body {
 
 #lrn-more-btn {
   font-size: 25px;
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Baloo Bhaijaan', cursive;
   color: #fff;
   text-decoration: none;
   background-color: #38761f;
@@ -332,7 +323,7 @@ body {
   background-color: #991c99;
   padding: 20px;
   font-size: 25px;
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Baloo Bhaijaan', cursive;
   color: #fff;
   text-decoration: none;
   margin-left: 10px;
@@ -346,11 +337,12 @@ body {
 .landing-rocket {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 20px; 
+  padding-top: 20px;
+  padding-bottom: 10px; 
 }
 
 .landing-rocket img {
+  width: 32px;
   transform: rotate(180deg);
 }
 
@@ -369,10 +361,10 @@ body {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
   60% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 
@@ -384,8 +376,8 @@ body {
   position: relative;
   background-color: #1c4587;
   width: 100%;
-  margin-top: 100px;
   display: block;
+  margin-top: 100px;
 }
 
 .wrapper {
@@ -394,16 +386,18 @@ body {
 
 .header {
   color: #fff;
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Baloo Bhaijaan', cursive;
   text-align: center;
-  padding: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-shadow: 3px 4px #444;
   background-color: #122c57;
   width: 100%;
 }
 
 .header h1 {
-  font-size: 3vw;
+  font-size: 60px;
+  white-space: nowrap;
 }
 
 .icon-center {
@@ -412,7 +406,7 @@ body {
 
 .subject-header {
   color: #fff;
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Baloo Bhaijaan', cursive;
   text-align: center;
   padding: 10px;
   text-shadow: 3px 3px #38761f;
@@ -442,13 +436,21 @@ body {
 
 .carousel-header {
   color: #fff;
-  font-family: 'Fugaz One', cursive; 
+  font-family: 'Baloo Bhaijaan', cursive; 
   text-align: center;
-  padding-right: 80px;
-  padding-left: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   padding-top: 0px;
   text-shadow: 3px 4px #444;
+  width: 100%;
+  font-size: 60px;
+}
+
+.carousel-support {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 0px;
   width: 100%;
 }
 
@@ -457,9 +459,6 @@ body {
   box-shadow: 5px 5px #444;
 }
 
-.carousel-header h1 {
-  font-size: 3vw;
-}
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
   width: 50px;
@@ -468,8 +467,8 @@ body {
   opacity: 1;
   color: #fff;
   box-shadow: 5px 5px #122c57;
-  border-radius: 50px;
-  padding: 10px;
+  border-radius: 100px;
+  padding: 20px;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -480,6 +479,10 @@ body {
 
 .carousel-item {
   box-shadow: 5px 5px #444!important;
+}
+
+.carousel-item img {
+  width: 100%;
 }
 
 .carousel-item.active {
@@ -494,7 +497,7 @@ body {
 }
 
 .carousel-caption h3 {
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Baloo Bhaijaan', cursive;
   text-shadow: 4px 4px #444;
 }
 
@@ -503,7 +506,7 @@ body {
 }
 
 #gallery-button {
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Baloo Bhaijaan', cursive;
   font-size: 32px;
   color: #fff;
   text-shadow: 3px 3px #444;
@@ -514,6 +517,7 @@ body {
   text-decoration: none;
   margin: 20px;
   transition: all 500ms ease;
+  white-space: nowrap;
 }
 
 #gallery-button:hover {
@@ -522,17 +526,40 @@ body {
 
 .astronaught {
   position: absolute;
-  top: 0;
+  top: 10;
   right: 0;
   left: 10;
-  padding-right: 120px; 
+  padding-right: 120px;
+  width: 256px;
+  height: 256px; 
+}
+
+.astronaught img {
+  width: 256px!important;
+  height: 256px!important;
+}
+
+.astronaught2 {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  padding-right: 120px;
+  width: 256px;
+  height: 256px; 
+  transform: scaleX(-1);
+  padding-bottom: 20px;
+}
+
+.astronaught2 img {
+  width: 256px;
+  height: 256px;
 }
 
 #footer {
   height: 100%;
   width: 100%;
   position: relative;
-  z-index: 50;
+  z-index: 40;
   display: block;
   background-color: #1c4587;
   padding: 30px;
@@ -540,9 +567,10 @@ body {
 
 .footer-header h1 {
   color: #fff;
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Baloo Bhaijaan', cursive;
   text-shadow: 4px 4px #444;
   text-align: center;
+  font-size: 60px;
 }
 
 .footer-header p {
@@ -578,15 +606,24 @@ body {
 
 /* media queries */
 
-@media (max-width: 576px){
-  .navbar {
-    background-color: #38761f;
-    border-bottom: 10px solid #1d420e;
-    margin: 0;
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+  .header {
+    padding: 20px;
   }
 
+  .header h1 {
+    white-space: normal;
+  }
+
+  .wrapper {
+    padding: 20px;
+  }
+  
+
   .landing-content {
-    margin-top: 430px;
+    margin-top: 500px;
     padding-bottom: 65px;
   }
 
@@ -594,7 +631,6 @@ body {
     font-size: 16px;
     text-align: center;
   }
-
   #lrn-more-btn, #watch-video-btn {
     padding: 10px;
     font-size: 20px;
@@ -603,4 +639,84 @@ body {
   .landing-rocket {
     display: none;
   }
+
+  .carousel-header {
+    padding: 20px;
+  }
+
+  .carousel-wrapper {
+    padding: 0px;
+  }
+
+  .carousel-header h1 {
+    font-size: 40px;
+  }
+
+  #gallery-button {
+    font-size: 20px;
+  }
+
+  .astronaught img {
+    position: absolute;
+    bottom: -150px;
+    right: -20px;
+    width: 256px;
+    height: 256px; 
+  }
+
+  .astronaught2 {
+    display: none;
+  }
+
+  
 }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { ... }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+  .carousel-header {
+    padding: 10px;
+  }
+
+  .astronaught {
+    right: 150px;
+    bottom: 120px;
+    
+  }
+
+  .astronaught img {
+    width: 128px!important;
+    height: 128px!important;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .navbar {
+    background-color: #38761f;
+    border-bottom: 10px solid #1d420e;
+    margin: 0;
+  }
+}
+
+
+
+/* @media (min-width: 768px){
+  .navbar {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landing-content {
+    margin-top: 600px!important;
+  }
+
+  .landing-rocket {
+    padding-top: 20px!important;
+  }
+} */
