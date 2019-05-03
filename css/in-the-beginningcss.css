@@ -35,7 +35,7 @@ html, body {
   
   .nav-item {
     font-family: 'Baloo Bhaijaan', cursive;
-    font-size: 18px;
+    font-size: 24px;
     margin-left: 1rem!important;
     margin-right: 1rem!important;
     transition: all 500ms ease;
@@ -123,7 +123,56 @@ html, body {
   .timeline-header p {
       font-size: 20px;
       color: #fff;
+      margin-left: 50%;
   }
+
+  ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #122c57;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li > p {
+  color: #fff;
+}
+
+ul.timeline > li > a {
+  text-decoration: none;
+  color: #122c57;
+  font-family: 'Baloo Bhaijaan', cursive;
+  text-shadow: 1.5px 1.5px #112222;
+  font-size: 32px;
+}
+
+
+ul.timeline > li:before {
+    content: ' ';
+    background: #1c4587;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #112222;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+.float-right {
+  color: #fff!important;
+}
 
   /* .astronaught {
     position: absolute;
@@ -202,3 +251,65 @@ html, body {
     padding: 10px;
     margin: 0;
   }
+
+
+@media (max-width: 576px) {
+  #intro {
+    background-image: url(../assets/mobile-banner.jpg)!important;
+  }
+
+  .intro-wrapper {
+    padding-top: 100px;
+    padding-bottom: 110px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .header h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .header p {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  #timeline {
+    margin-top: -45px;
+  }
+
+  .timeline-wrapper {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .timeline-header {
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .timeline-header p {
+    margin: 0;
+  }
+
+  ul.timeline > li > a {
+    float: none!important;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}

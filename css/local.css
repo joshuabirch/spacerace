@@ -215,12 +215,9 @@ body {
 
 /* navigation */
 .navbar {
-  padding: 10px;
-  border-bottom: 2px solid #fff; 
+  padding: 10px; 
   transition: all 500ms ease;
   margin-top: 10px;
-  margin-left: 300px;
-  margin-right: 300px;
 }
 
 .nav-de-pad {
@@ -232,6 +229,7 @@ body {
   margin: 0;
   background-color: #38761f;
   border-bottom: 10px solid #1d420e;
+  font-size: 18px;
 }
 
 .carousel-scrolled {
@@ -243,7 +241,7 @@ body {
 .nav-item {
   padding: 20px;
   font-family: 'Baloo Bhaijaan', cursive;
-  font-size: 18px;
+  font-size: 24px;
   margin-left: 1rem!important;
   margin-right: 1rem!important;
   transition: all 500ms ease;
@@ -427,6 +425,7 @@ body {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  line-height: 20px;
 }
 
 
@@ -633,7 +632,7 @@ body {
   
 
   .landing-content {
-    margin-top: 500px;
+    margin-top: 350px;
     padding-bottom: 65px;
   }
 
@@ -681,8 +680,15 @@ body {
   
 }
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { ... }
+@media (max-width: 767.98px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-item {
+    padding: 0px;
+  }
+}
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
@@ -714,28 +720,54 @@ body {
     margin: 0;
   }
 
-  .landing-content {
-    margin-top: 600px!important;
-  }
+
 
 }
-  
 
+/* Space Race Media Positioning Special Declaration */
 
-
-/* @media (min-width: 768px){
-  .navbar {
-    margin-left: 150px;
-    margin-right: 150px;
+@media (width: 360px) {
+  .landing-content {
+    margin-top: 400px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (width: 411px) {
   .landing-content {
-    margin-top: 600px!important;
+    margin-top: 500px;
   }
+}
 
-  .landing-rocket {
-    padding-top: 20px!important;
+@media (width: 414px) {
+  .landing-content {
+    margin-top: 500px;
   }
-} */
+}
+
+
+@media (width: 375px) {
+  .landing-content {
+    margin-top: 400px;
+  }
+}
+
+@media (width: 375px) and (height: 812px) {
+  .landing-content {
+    margin-top: 500px;
+  }
+}
+
+@media (width: 768px) {
+  .landing-content {
+    margin-top: 650px;
+  }
+}
+
+@media (width: 1024px){
+  .landing-content {
+    margin-top: 900px;
+  }
+  .nav-item {
+    margin: 0!important;
+  }
+}
